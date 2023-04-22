@@ -85,9 +85,12 @@
   \begingroup
     \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
+    {
+      \Huge\bfseries\MakeUppercase{\@name}
+      \hfill
+      \raisebox{.7 ex}{\large\bfseries\color{accent}\@tagline}
+      \par
+    }
     \medskip
     {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
@@ -122,7 +125,7 @@
   \textbf{\color{accent}#2}\par
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\hspace{0.5em}\faMapMarker\hspace{0.5em}#4}}\par}
   \medskip
 }
 

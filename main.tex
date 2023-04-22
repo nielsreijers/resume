@@ -16,10 +16,16 @@
 
 %Colors
 
+% old
+%\definecolor{accent}{HTML}{000e17}
+%\definecolor{heading}{HTML}{000e17}
+%\definecolor{emphasis}{HTML}{696969}
+%\definecolor{body}{HTML}{01415f}
+
 \definecolor{accent}{HTML}{000e17}
-\definecolor{heading}{HTML}{000e17}
+\definecolor{heading}{HTML}{0077b5}
 \definecolor{emphasis}{HTML}{696969}
-\definecolor{body}{HTML}{01415f}
+\definecolor{body}{HTML}{000e17}
 
 \colorlet{heading}{heading}
 \colorlet{accent}{accent}
@@ -29,141 +35,103 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%
-
 \begin{document}
-\name{Jakša Tomović}
-\tagline{}
+\name{Niels Reijers}
+\tagline{Lead / Senior Software Developer}
 %\photo{2.5cm}{BrunoAlves}
 \personalinfo{
-    \printinfo{\faBirthdayCake}{23th Nov 1992}
-    \email{jaksa.tomovic@gmail.com}
-    \phone{+385 98 998 8971}
+    \location{New Taipei City, Taiwan}
+    \printinfo{\faBirthdayCake}{5th Feb 1977}
+    \email{nielsreijers@gmail.com}
+    \phone{+886 975 140 428}
 %    \mailaddress{SR Njemačke 6, 10000}
-    \location{Zagreb, Croatia}
-    \linkedin{linkedin.com/in/jaksatomovic}
-    \homepage{jaksatomovic.github.io}
-    \github{github.com/jaksatomovic}
+    
+    
+    \github{\href{https://www.github.com/nielsreijers}{www.github.com/nielsreijers}}
+    \linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{www.linkedin.com/in/niels-reijers-4609602}}
+    \homepage{\color{heading}\href{https://www.nielsreijers.com/cv-longer-version.pdf}{www.nielsreijers.com/cv-longer-version.pdf}}
 }
-
-%
 
 \begin{fullwidth}
 \makecvheader
+
+I have over 25 years' experience in IT, in both commercial and research environments. I've designed and implemented many systems from the ground up, and worked as lead developer on large projects.
+
+I hold a PhD in computer science from National Taiwan University and published my work in the field's top conference.
+
 \end{fullwidth}
-
-%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsection[page1sidebar]{Experience}
 
-%%%%%%%%%%%%%
-%Experience 1
-%%%%%%%%%%%%%
+\cvevent{Lead / Senior Software Developer}{DSW Health Insurance}{Apr 2004 -- Ongoing}{Schiedam, The Netherlands}
 
-\cvevent{Java Engineer}{Deegloo d.o.o.}{August 2019 -- Ongoing}{Zagreb, Croatia}
-
+Feb 2007 - Nov 2009: Oversaw the development of the new claims processing system as the lead developer.
 \begin{itemize}
-    \setlength{\itemindent}{0.5em}
-    \item[--]   \small{Developing software using Java Spring Boot}
-    \item[--]   \small{Writing integration and unit tests using Cucumber}
-    \item[--]   \small{Version Control using Git}
-    \item[--]   \small{Tasks management using Jira}
-    \item[--]   \small{Working by Scrum framework}
+	\item\small{Delivered on time, it has been running reliably for 13 years and proven to be very maintainable, despite being the company's most complex system.}
+	\item\small{It produced several spin-off products that became a company-wide standard for other teams, leading to improved efficiency and standardization.}
 \end{itemize}
 
 \medskip
 
-%%%%%%%%%%%%%
-%Experience 2
-%%%%%%%%%%%%%
+After moving Taiwan to study Chinese and pursue a PhD, I was granted the opportunity to come back to work as a senior developer for a few months per year. This privilege was not typically offered to other employees, and I am grateful for this flexibility.
 
-\cvevent{Fullstack Developer}{King ICT d.o.o.}{July 2018 -- August 2019}{Zagreb, Croatia}
-
-%\begin{itemize}
-%    \item Fullstack JAVA developer
-%\end{itemize}
 
 \begin{itemize}
-    \setlength{\itemindent}{0.5em}
-    \item[--]   \small{Developing microservices using .NET Core Framework}
-    \item[--]   \small{Developing and maintaining software using .NET Framework and SQL Server}
-    \item[--]   \small{Developing and maintaining frontend using React.js}
-    \item[--]   \small{Developing mobile apps using React Native}
-    \item[--]   \small{Designing and coding database tables to store the application’s data}
-    \item[--]   \small{Working by Scrum framework}
-    \item[--]   \small{Tracking issues and version control using Git and TFS}
+	\item\small{Worked on and built many different systems, often with a focus on performance tuning.}
+	\item\small{Initiated two projects that had a particularly large impact:
+	\begin{itemize}
+		\item[-]\small{The development of a system for company-wide monitoring of service calls. This gave valuable real-time insight in the behavior and performance of their systems, which they did not have before.}
+		\item[-]\small{I identified a problem with the growing complexity of the deployment system. On my suggestion this was changed to an XML-based ‘convention over configuration' solution. This improved maintainability and reduced the burden for developers, who no longer have to write deployments scripts.}
+	\end{itemize}
+	}
+	\item\small{Rebuilt a database conversion that an external supplier had been working on for months and failed to get working. My implementation took 1 week to build and ran in minutes rather than hours. This allowed the project to go live and convert our customer's data in an acceptable time frame.}
 \end{itemize}
+\cvtag{C\#}
+\cvtag{MS SQL Server}
+\cvtag{PowerShell}
+\cvtag{Python}
+\cvtag{Jupyter}
+
+\medskip
+\medskip
+
+\begin{comment}
+\cvevent{Postdoctoral Researcher}{Academia Sinica}{Mar 2020 -- May 2021}{Taipei, Taiwan}
+Research on disinformation.
+\cvtag{Golang}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvevent{Postdoctoral Researcher}{National Taiwan University}{Feb 2019 -- Aug 2019}{Taipei, Taiwan}
+Blockchain
+
+\medskip
+\medskip
+\end{comment}
+
+\cvevent{Doctoral Candidate}{Intel-NTU Connected Context Computing Center}{Sep 2011 -- Apr 2018}{Taipei, Taiwan}
+
+Developed CapeVM:
+\begin{itemize}
+    \item\small{A Java virtual machine for resource-constrained Internet-of-Things devices such as the Atmel ATMEGA128.}
+    \item\small{CapeVM uses on-device ahead-of-time compilation to native code to drastically improve performance compared to existing VMs in this class, which are one to two orders of magnitude slower than optimized C.}
+\end{itemize}
+
+My work improved the state of the art by:
+\begin{itemize}
+    \item\small{Improving performance to close to optimized C and thus reducing energy consumption, while maintaining platform independence.}
+    \item\small{Providing a safe execution environment to protect devices from buggy or malicious code, at a cost comparable to existing native code solutions.}
+\end{itemize}
+
+The results were published in the field's top conference, SenSys 2018.
 
 \medskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvtag{C}
+\cvtag{Embedded systems}
+\cvtag{AVR assembly}
+\cvtag{Java}
+\cvtag{JVM bytecode}
 
-\cvsection[page2sidebar]{Projects}
-
-%%%%%%%%%%%%%
-%Project 1
-%%%%%%%%%%%%%
-
-\cvevent{digitalnakomora.hr}{King ICT d.o.o.}{September 2018 -- March 2019}{Zagreb, Croatia}
-
-\begin{itemize}
-  \item \small{The platform bring all the important information for entrepreneurs such as: macroeconomic indicators at the level of Croatia and individual counties, average monthly net wage, registered unemployment rate, inflation, number of active business entities and many more. Business entities can be searched by name, responsible persons or statistics of activity and can be compared with other entities.}
-  \item Techs: ASP.NET MVC, Entity Framework, ReactJS and SQL Server
-\end{itemize}
-
-\divider
-
-%
-
-%%%%%%%%%%%%%
-%Project 2
-%%%%%%%%%%%%%
-
-\cvevent{Electronic Toll Collection}{King ICT d.o.o.}{March 2019 -- August 2019}{Zagreb, Croatia}
-
-\begin{itemize}
-  \item Description -- ETC is universal platform for payments
-  \item Techs: Microservice architecture with .NET Core 2, Entity Framework, RabbitMQ and MassTransit, React Native and SQL Server 
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Certificates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cvsection{Certificates}
-
-%%%%%%%%%%%%%
-%Certificate 1
-%%%%%%%%%%%%%
-
-\cvevent{MCSD: App Builder — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
-\divider
-
-%%%%%%%%%%%%%
-%Certificate 2
-%%%%%%%%%%%%%
-
-\cvevent{MCSA: Web Applications — Certified 2019}{Microsoft}{Jan 2019 -- No Expiration Date}{}
-\divider
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Interests %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \cvsection{Interests}
-
-% \wheelchart{1.5cm}{0.5cm}{%
-%   10/10em/accent!30/Electronics,
-%   25/9em/accent!60/Science,
-%   5/13em/accent!10/Movies,
-%   20/15em/accent!40/Sport,
-%   30/9em/accent/Technology,
-%   5/8em/accent!20/Literature
-% }
-
-
-%%New Page
-% \clearpage
-
-
-
+\medskip
 
 \end{document}
