@@ -116,7 +116,7 @@
 
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
-  {\color{emphasis}\large\bfseries{#1}\par}\medskip
+  {\color{heading}\large\bfseries{#1}\par}\medskip
 }
 
 \newcommand{\cvevent}[4]{%
@@ -136,6 +136,15 @@
   \end{tabularx}%
   \smallskip
 }
+
+\newcommand{\cvpublication}[4]{%
+  \begin{tabularx}{\linewidth}{@{}p{5em} >{\raggedright\arraybackslash}X@{}}
+  \small #4 & \bfseries\textcolor{emphasis}{#2} \\
+  & #1, #3
+  \end{tabularx}
+  \smallskip
+}
+
 
 \newcommand{\cvtag}[1]{%
   \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
