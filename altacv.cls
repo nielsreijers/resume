@@ -119,6 +119,10 @@
   {\color{heading}\large\bfseries{#1}\par}\medskip
 }
 
+\newcommand{\cvperiod}[1] {
+\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#1}
+}
+
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
