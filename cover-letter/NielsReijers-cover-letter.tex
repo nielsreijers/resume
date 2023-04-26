@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CV Jakša Tomović 06/2019 %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{../altacv}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+%Layout
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+%Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+%Colors
+
+% old
+%\definecolor{accent}{HTML}{000e17}
+%\definecolor{heading}{HTML}{000e17}
+%\definecolor{emphasis}{HTML}{696969}
+%\definecolor{body}{HTML}{01415f}
+
+\definecolor{accent}{HTML}{000e17}
+\definecolor{heading}{HTML}{0077b5}
+\definecolor{emphasis}{HTML}{696969}
+\definecolor{body}{HTML}{000e17}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\hypersetup{%
+	colorlinks=false,
+	urlbordercolor=white
+}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\begin{document}
+\name{Niels Reijers}
+\tagline{Lead / Senior Software Developer}
+%\photo{2.5cm}{BrunoAlves}
+\personalinfo{
+    \location{New Taipei City, Taiwan} \\
+    \email{nielsreijers@gmail.com} \\
+    \phone{+886 975 140 428} \\
+	\homepage{\color{heading}\href{https://www.nielsreijers.com}{www.nielsreijers.com}}
+}
+
+\begin{fullwidth}
+\makecvheader
+
+
+\cvsection{\hfill Cover letter \hfill}
+
+		\vspace{1cm} % Vertical whitespace
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{changemargin}{2cm}{2cm}
+
+\bigskip
+\bigskip
+
+L.S.,
+
+\bigskip
+
+PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening (i.e. career development center, website, employment service, personal contact).
+
+\bigskip
+
+PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services -- above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life.
+
+\bigskip
+
+PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials.
+
+\bigskip
+
+Thank you for your time and consideration.
+
+\bigskip
+
+\bigskip
+
+Sincerely,
+
+\hspace{.5cm}
+\includegraphics[width=4cm]{handtekening.png} \\
+Niels Reijers
+
+\end{changemargin}
+
+\end{fullwidth}
+
+
+\end{document}
