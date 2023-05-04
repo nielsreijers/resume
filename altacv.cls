@@ -124,7 +124,7 @@
 }
 
 \newcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
+  {\large\color{heading}#1\par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
