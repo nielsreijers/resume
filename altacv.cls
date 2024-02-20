@@ -123,13 +123,21 @@
 \small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#1}
 }
 
+\newcommand{\cvexperience}[4]{%
+	
+	\makebox[0.5\linewidth][l]{\large\color{heading}#1\par}\makebox[0.5\linewidth][r]{\faCalendar \hspace{0.5em}#3 }
+	\makebox[0.5\linewidth][l]{\textbf{\color{accent}#2}\par}\makebox[0.5\linewidth][r]{\ifstrequal{#4}{}{}{\hspace{0.5em}\faMapMarker\hspace{0.5em}#4}\par}
+	
+	\medskip
+}
+
 \newcommand{\cvevent}[4]{%
   {\large\color{heading}#1\par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#3}%
-  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][l]{\hspace{0.5em}\faMapMarker\hspace{0.5em}#4}}\par}
+  \ifstrequal{#4}{}{}{\makebox[0.5\linewidth][r]{\hspace{0.5em}\faMapMarker\hspace{0.5em}#4}}\par}
   \medskip
 }
 
