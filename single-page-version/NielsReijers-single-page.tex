@@ -48,18 +48,13 @@
 \tagline{Staff / Lead Software Engineer}
 %\photo{2.5cm}{BrunoAlves}
 \personalinfo{
-%    \location{New Taipei City, Taiwan}
-%    \printinfo{\faBirthdayCake}{5th Feb 1977}
-    \email{nielsreijers@gmail.com}
-    \phone{+886 975 140 428}
-%    \mailaddress{SR Njemačke 6, 10000}
-    
-    
-    \github{\href{https://www.github.com/nielsreijers}{www.github.com/nielsreijers}}
-    \hfill
-    \linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{www.linkedin.com/in/niels-reijers-4609602}}
-    \hfill
-    \homepage{\color{heading}\href{https://www.nielsreijers.com/cv/NielsReijers-full-version.pdf}{www.nielsreijers.com/cv-full-version.pdf}}
+	\begin{tabularx}{\linewidth}{@{} l X r @{}}
+		\email{nielsreijers@gmail.com} &
+		\github{\href{https://www.github.com/nielsreijers}{github.com/nielsreijers}} &
+		\homepageright{\color{heading}\href{https://www.nielsreijers.com/cv/NielsReijers-full-version.pdf}{www.nielsreijers.com/cv-full-version.pdf}} \\
+		\phone{+886 975 140 428} &
+		\linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{linkedin.com/in/niels-reijers-4609602}} &
+	\end{tabularx}
 }
 
 \begin{fullwidth}
@@ -79,31 +74,39 @@
 
 \medskip
 
-\cvexperience{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Ongoing}{Schiedam, The Netherlands}
+\cvexperience{Senior Software Engineer}{Proton Mail}{Aug 2024 -- Ongoing}{Taipei, Taiwan}
 
-After leaving DSW in 2009 to study Chinese and pursue a PhD in Taiwan, I was granted the opportunity to come back to work on a contract basis for several months every year, from 2016 as Staff Software Engineer. This privilege was not typically offered to other employees, and I am grateful for this flexibility.
+
+Traffic Analysis \& DDoS Protection:
+\begin{itemize}
+	\item Maintained and improved ClickHouse-based traffic analysis pipelines.
+	\item Increased DDoS mitigation capacity roughly 5-fold by isolating it from heavy analytics.
+	
+	\item Improved anomaly detection for early issue detection through automated root-cause analysis.
+\end{itemize}
+AI Agentic Framework: Main contributor on an AutoGen-based infrastructure for task automation, including LLM interfaces, agent and prompt design.
+\medskip
+
+\cvtag{Python}
+\cvtag{ClickHouse}
+\cvtag{Datadog Vector}
+\cvtag{AutoGen AI}
+\cvtag{vllm}
+
+\medskip\cvexperience{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Apr 2025}{Schiedam, The Netherlands}
+
+After leaving DSW to study Chinese and pursue a PhD, I was given the opportunity to combine this with contract work, from 2016 as Staff Software Engineer. This privilege was not typically offered to other employees.
 
 \medskip
 
 \begin{itemize}
-	\item Worked on, designed and implemented many different systems.
-	\smallskip
-	\item Often focussed on observability and performance optimization.
-	\smallskip
-	\item Initiated two high-impact projects:
+	\item Designed, implemented and worked on many different systems myself. Ad hoc troubleshooter or contributor on many others.
+	\item Often focussed on automation, observability and performance optimization.
+	\item Initiated high-impact projects, including:
 	\begin{itemize}
-		\item[-] Developed a system for company-wide monitoring of service calls.
-		
-		This provided valuable and previously unavailable real-time insight in the behavior and performance of their systems.
-		\smallskip
-		\item[-] Identified a problem with the growing complexity of the deployment system. On my initiative this was changed to an XML-based ‘convention over configuration' solution.
-		
-		This improved maintainability and reduced the burden on developers, who no longer have to write deployments scripts.
+		\item[-] Company-wide service call observability which provided valuable and previously unavailable real-time insight into the systems' behaviour.
+		\item[-] Converting the deployment system from script-based to a ‘convention over configuration' solution. This improved maintainability and stability, and reduced the burden on developers.
 	\end{itemize}
-	\smallskip
-	\item Rebuilt a database conversion that an external party had been working on unsuccessfully for months. My implementation took 1 week to build and ran in minutes rather than hours.
-	
-	This allowed us to convert our data in an acceptable time frame and the project to go live.
 \end{itemize}
 
 \medskip
@@ -114,27 +117,23 @@ After leaving DSW in 2009 to study Chinese and pursue a PhD in Taiwan, I was gra
 \cvtag{Python}
 \cvtag{Jupyter}
 
+\medskip\medskip\cvexperience{Postdoctoral Researcher}{National Taiwan University / Academica Sinica}{Feb 2019 -- May 2021}{Taipei, Taiwan}
+Collaborated with professor Chih-Wen Hsueh at NTU on a novel block chain, and professor Yuh-Jye Lee at Sinica on a project to correct online disinformation.
+
 \medskip\medskip\cvexperience{Doctoral Candidate}{Intel-NTU Connected Context Computing Center}{Sep 2011 -- Apr 2018}{Taipei, Taiwan}
 
-\begin{itemize}
-	\item Developed a Java Virtual Machine for resource-constrained Internet-of-Things devices such as the Atmel ATMEGA128.
-	\smallskip
-	\item Implemented on-device ahead-of-time compilation to native code to drastically improve performance compared to existing VMs in this class, which are one to two orders of magnitude slower than optimized C.
-\end{itemize}
-
-Improved the state of the art by:
+Improved the state of the art for Java VMs for resource-constrained IoT devices:
 
 \medskip
 
 \begin{itemize}
-	\item Improving performance to close to optimized C and thus reducing energy consumption, while maintaining platform independence.
-	\smallskip
-	\item Providing a safe execution environment to protect devices from buggy or malicious code, at a cost comparable to existing native code solutions.
+	\item Improved performance to close to optimized C, thus reducing energy consumption, through on-device ahead-of-time compilation to native code.
+	\item Provided a platform independent and sandboxed environment to protect devices from malicious code.
 \end{itemize}
 
 \medskip
 
-The results were published in SenSys 2018, the field's top conference.
+Published the results in the field's top conference, SenSys 2018.
 
 \medskip
 
@@ -146,13 +145,12 @@ The results were published in SenSys 2018, the field's top conference.
 
 \medskip\medskip\cvexperience{Lead Developer}{DSW Health Insurance}{Apr 2005 -- Nov 2009}{Schiedam, The Netherlands}
 
-Oversaw the development of the new claims processing system as lead developer.
+Lead the development of the new claims processing system as lead developer.
 
 \medskip
 
 \begin{itemize}
-	\item Delivered on time, running reliably for 13 years and proven to be very maintainable, despite being the company's most complex system.
-	\smallskip
+	\item Delivered on time, running reliably since 2009 and proven to be very maintainable, despite being the company's most complex system.
 	\item Produced several spin-off products that became a company-wide standard for other teams, leading to improved efficiency and standardization.
 \end{itemize}
 

@@ -16,6 +16,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 \usepackage{hyperref}
+\usepackage{tabularx}
 
 %Colors
 
@@ -48,18 +49,13 @@
 	\tagline{Staff / Lead Software Engineer}
 	%\photo{2.5cm}{BrunoAlves}
 	\personalinfo{
-		%    \location{New Taipei City, Taiwan}
-		%    \printinfo{\faBirthdayCake}{5th Feb 1977}
-		\email{nielsreijers@gmail.com}
-		\phone{+886 975 140 428}
-		%    \mailaddress{SR Njemačke 6, 10000}
-		
-		
-		\github{\href{https://www.github.com/nielsreijers}{www.github.com/nielsreijers}}
-		\hfill
-		\linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{www.linkedin.com/in/niels-reijers-4609602}}
-		\hfill
-		\homepage{\color{heading}\href{https://www.nielsreijers.com}{www.nielsreijers.com}}
+	\begin{tabularx}{\linewidth}{@{} l X r @{}}
+		\email{nielsreijers@gmail.com} &
+		\github{\href{https://www.github.com/nielsreijers}{github.com/nielsreijers}} &
+		\homepageright{\color{heading}\href{https://www.nielsreijers.com}{nielsreijers.com}} \\
+		\phone{+886 975 140 428} &
+		\linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{linkedin.com/in/niels-reijers-4609602}} &
+	\end{tabularx}
 	}
 	
 	\begin{fullwidth}
@@ -84,8 +80,35 @@
 	\small
 	
 	\cvsection[page1sidebar]{Experience}
+
+	\cvevent{Senior Software Engineer}{Proton Mail}{Aug 2024 -- Ongoing}{Taipei, Taiwan}
 	
-	\cvevent{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Ongoing}{Schiedam, The Netherlands}
+	
+	\textbf{Traffic Analysis \& DDoS Protection}:
+	\begin{itemize}
+		\item Maintained ClickHouse-based traffic analysis pipelines used for analytics and DDoS protection.
+
+		\item Isolated the DDoS mitigation pipeline from the heavier analytics queries, which increased its capacity roughly 5-fold. Developed custom Prometheus metrics of the pipeline's performance to verify this.
+
+		\item Developed automated root-cause analysis of detected traffic anomalies to improved early issue diagnosis.
+	\end{itemize}
+	
+	\textbf{AI Agentic Framework}:
+	\begin{itemize}
+		\item Main contributor on an AutoGen-based infrastructure for task automation, including LLM interfaces, agent and prompt design.
+	\end{itemize}
+
+	\medskip
+	
+	\cvtag{Python}
+	\cvtag{ClickHouse}
+	\cvtag{Datadog Vector}
+	\cvtag{AutoGen AI}
+	\cvtag{vllm}
+	
+	\medskip
+	
+	\cvevent{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Apr 2025}{Schiedam, The Netherlands}
 	
 	After leaving DSW in 2009 to study Chinese and pursue a PhD in Taiwan, I was granted the opportunity to come back to work on a contract basis for several months every year, from 2016 as Staff Software Engineer. This privilege was not typically offered to other employees, and I am grateful for this flexibility.
 	
@@ -122,7 +145,10 @@
 	
 	
 	
-	\bigskip\bigskip\cvevent{Postdoctoral Researcher}{Academica Sinica, Taiwan Information Security Center}{Mar 2020 -- May 2021}{Taipei, Taiwan}
+	\newpage
+	{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{page2sidebar}}}
+	
+	\cvevent{Postdoctoral Researcher}{Academica Sinica, Taiwan Information Security Center}{Mar 2020 -- May 2021}{Taipei, Taiwan}
 	
 	Worked with professor Yuh-Jye Lee on a project on disinformation.
 	
@@ -143,10 +169,8 @@
 	\cvtag{Chrome Extensions}
 	\cvtag{MySQL}
 	
-	
-	\newpage
-	{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{page2sidebar}}}
-	\cvevent{Postdoctoral Researcher}{National Taiwan University, Wireless Networking and Embedded Systems Lab}{Feb 2019 -- Aug 2019}{Taipei, Taiwan}
+
+	\bigskip\bigskip\cvevent{Postdoctoral Researcher}{National Taiwan University, Wireless Networking and Embedded Systems Lab}{Feb 2019 -- Aug 2019}{Taipei, Taiwan}
 	
 	\begin{itemize}
 		\item Worked with professor Hsueh Chih-Wen on block chain research aimed at reducing energy consumption.
@@ -224,6 +248,9 @@
 	Personal goal pursuit: Studying Mandarin Chinese in Taipei
 	
 	
+	\newpage
+
+
 	\bigskip\bigskip\cvevent{Lead Developer}{DSW Health Insurance}{Feb 2007 -- Nov 2009}{Schiedam, The Netherlands}
 	
 	Oversaw the development of the new claims processing system as lead developer.
@@ -254,8 +281,6 @@
 	\cvtag{PowerBuilder}
 	\cvtag{Sybase SQL Server}
 	
-	\newpage
-
 
 	\bigskip\bigskip\cvevent{Doctoral Candidate}{Delft University of Technology, Parallel and Distributed Systems Group}{Sep 2002 -- Mar 2005}{Delft, The Netherlands}
 	
