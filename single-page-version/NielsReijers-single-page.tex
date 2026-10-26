@@ -1,41 +1,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% CV Jakša Tomović 06/2019 %%%%%%
+%%% CV Niels Reijers %%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \PassOptionsToPackage{dvipsnames}{xcolor}
 \documentclass[10pt,a4paper]{../altacv}
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
-
-%Layout
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
-
-%Packages
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
 \usepackage{hyperref}
 
-%Colors
+% Layout
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
 
-% old
-%\definecolor{accent}{HTML}{000e17}
-%\definecolor{heading}{HTML}{000e17}
-%\definecolor{emphasis}{HTML}{696969}
-%\definecolor{body}{HTML}{01415f}
-
+% Colors
 \definecolor{accent}{HTML}{000e17}
 \definecolor{heading}{HTML}{0077b5}
 \definecolor{emphasis}{HTML}{696969}
 \definecolor{body}{HTML}{000e17}
 
-\colorlet{heading}{heading}
-\colorlet{accent}{accent}
-\colorlet{emphasis}{emphasis}
-\colorlet{body}{body}
-
-\hypersetup{%
+\hypersetup{
 	colorlinks=false,
 	urlbordercolor=white
 }
@@ -44,120 +28,116 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 \begin{document}
-\name{Niels Reijers}
-\tagline{Staff / Lead Software Engineer}
-%\photo{2.5cm}{BrunoAlves}
-\personalinfo{
-	\begin{tabularx}{\linewidth}{@{} l X r @{}}
-		\email{nielsreijers@gmail.com} &
-		\github{\href{https://www.github.com/nielsreijers}{github.com/nielsreijers}} &
-		\homepageright{\color{heading}\href{https://www.nielsreijers.com/cv/NielsReijers-full-version.pdf}{www.nielsreijers.com/cv-full-version.pdf}} \\
-		\phone{+886 975 140 428} &
-		\linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{linkedin.com/in/niels-reijers-4609602}} &
-	\end{tabularx}
-}
-
-\begin{fullwidth}
-\makecvheader
-
-\begin{itemize}
-\item Lead developer with 25+ years of experience evolving legacy systems and architecting large-scale solutions from initial design through full implementation.
-\item PhD in computer science from National Taiwan University. Published in the field’s top conference. 
-\end{itemize}
-
-\end{fullwidth}
-
-\small
-
-\cvsection[page1sidebar]{Experience}
-
-\medskip
-
-\cvexperience{Senior Software Engineer}{Proton Mail}{Aug 2024 -- Ongoing}{Taipei, Taiwan / Rotterdam, The Netherlands}
-
-\begin{itemize}
- 	\item Building Rust backend services for Proton’s Lumo platform, covering LLM interfaces, tool integration, and prompt optimization, with a focus on reliability and system robustness.
-	\item Shaped architecture and prompt design for an AutoGen-based framework enabling LLM-driven agentic task automation.
-\end{itemize}
-
-Traffic Analysis \& DDoS Protection:
-\begin{itemize}
-	\item Scaled ClickHouse-based traffic analysis pipelines, increasing DDoS protection capacity 5× by isolating it from heavy analytics queries.
-	\item Improved root-cause analysis for traffic anomalies, reducing time to diagnosis.
-\end{itemize}
-
-\medskip
-
-\cvtag{Rust}
-\cvtag{vLLM}
-\cvtag{ClickHouse}
-\cvtag{Datadog Vector}
-\cvtag{Python}
-
-\medskip\cvexperience{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Apr 2025}{Schiedam, The Netherlands}
-
-After leaving DSW to study Chinese and pursue a PhD, I was given the opportunity to combine this with contract work, from 2016 as Staff Software Engineer. This privilege was not typically offered to other employees.
-
-\medskip
-
-\begin{itemize}
-	\item Designed and implemented multiple production systems; acted as a go-to troubleshooter across teams.
-	\item Focused on automation, observability, and performance optimization.
-	\item Initiated high-impact projects, including:
+	\name{Niels Reijers}
+	\tagline{Staff / Lead Software Engineer}
+	
+	\personalinfo{
+		\begin{tabularx}{\linewidth}{@{} l X r @{}}
+			\email{nielsreijers@gmail.com} &
+			\github{\href{https://www.github.com/nielsreijers}{github.com/nielsreijers}} &
+			\homepageright{\color{heading}\href{https://www.nielsreijers.com/cv/NielsReijers-full-version.pdf}{Full CV}} \\
+			\phone{+886 975 140 428} &
+			\linkedin{\href{https://www.linkedin.com/in/niels-reijers-4609602}{linkedin.com/in/niels-reijers-4609602}} &
+		\end{tabularx}
+	}
+	
+	\begin{fullwidth}
+		\makecvheader
+		
+		Staff / Lead Software Engineer specialising in distributed systems, backend architecture, performance engineering and AI agent infrastructure.
+		
+		Experienced in taking complex systems from design to production, improving reliability and scaling critical services.
+		
+		\medskip
+		
+		PhD in Computer Science, with research published at SenSys 2018.
+	\end{fullwidth}
+	
+	\small
+	
+	\cvsection[page1sidebar]{Experience}
+	
+	\medskip
+	
+	
+	\cvexperience{Senior Software Engineer}{Proton Mail}{Aug 2024 -- Present}{Taipei, Taiwan}
+	
+	\textbf{Lumo — AI platform (2026--Present)}
 	\begin{itemize}
-		\item[-] Company-wide service observability, enabling real-time system insight.
-		\item[-] Migration from script-based deployments to a convention-over-configuration system, improving reliability and developer efficiency.
+		\item Develop and scale Rust backend services for Proton's AI offering.
+		\item Lead the effort to deliver direct API access to Lumo.
+		\item Initiated user-facing features: background generation, an ``Answer Now'' control to prioritise faster responses, and improved user-feedback collection.
 	\end{itemize}
-\end{itemize}
+	
+	\textbf{AI Agents (2025)}
+	\begin{itemize}
+		\item Shaped the architecture and prompt design of an AutoGen-based framework for LLM-driven agentic task automation.
+	\end{itemize}
+	
+	\textbf{DDoS protection and traffic analysis (2024--2025)}
+	\begin{itemize}
+		\item Increased DDoS protection capacity 5$\times$ by isolating real-time traffic analysis from resource-intensive analytics queries.
+		\item Improved root-cause analysis for traffic anomalies, reducing time to diagnosis.
+	\end{itemize}
+	
+	\medskip
 
-\medskip
-
-\cvtag{C\#}
-\cvtag{MS SQL Server}
-\cvtag{PowerShell}
-\cvtag{Python}
-\cvtag{Jupyter}
-
-\medskip\medskip\cvexperience{Postdoctoral Researcher}{National Taiwan University / Academica Sinica}{Feb 2019 -- May 2021}{Taipei, Taiwan}
-%Collaborated with professor Chih-Wen Hsueh at NTU on a novel block chain, and professor Yuh-Jye Lee at Sinica on a project to correct online disinformation.
-
-\medskip\medskip\cvexperience{Doctoral Candidate}{Intel-NTU Connected Context Computing Center}{Sep 2011 -- Apr 2018}{Taipei, Taiwan}
-
-Improved the state of the art for Java VMs for resource-constrained IoT devices:
-
-\medskip
-
-\begin{itemize}
-	\item Improved performance to close to optimized C, thus reducing energy consumption, through on-device ahead-of-time compilation to native code.
-	\item Provided a platform independent and sandboxed environment to protect devices from malicious code.
-\end{itemize}
-
-\medskip
-
-Published the results in the field's top conference, SenSys 2018.
-
-\medskip
-
-\cvtag{C}
-\cvtag{Embedded systems}
-\cvtag{AVR assembly}
-\cvtag{Java}
-\cvtag{JVM bytecode}
-
-\medskip\medskip\cvexperience{Lead Developer}{DSW Health Insurance}{Apr 2005 -- Nov 2009}{Schiedam, The Netherlands}
-
-Lead the development of the new claims processing system as lead developer.
-
-\medskip
-
-\begin{itemize}
-	\item Delivered on time, running reliably since 2009 and proven to be very maintainable, despite being the company's most complex system.
-	\item Produced several spin-off products that became a company-wide standard for other teams, leading to improved efficiency and standardization.
-\end{itemize}
-
-\medskip
-
-%\cvtag{C\#}
-%\cvtag{MS SQL Server}
-
+	\cvtag{Rust}
+	\cvtag{LLM infrastructure}
+	\cvtag{vLLM / sglang}
+	\cvtag{ClickHouse}
+	\cvtag{Python}	
+	
+	\bigskip
+	
+	\cvexperience{Staff Software Engineer}{DSW Health Insurance (contract)}{Jun 2011 -- Apr 2024}{Schiedam, The Netherlands}
+	
+	Continued as a contract engineer while pursuing doctoral research in Taiwan; from 2016 as Staff Software Engineer.
+	
+	\begin{itemize}
+		\item Designed and delivered multiple production systems; served as a go-to troubleshooter across teams.
+		\item Drove improvements in automation, observability, and performance.
+		\item Initiated high-impact engineering projects, including:
+		\begin{itemize}
+			\item Company-wide service observability, providing real-time insight into system behaviour.
+			\item A move from script-based deployments to a convention-over-configuration system, improving deployment reliability and developer efficiency.
+		\end{itemize}
+	\end{itemize}
+	
+	\medskip
+	\cvtag{C\#}
+	\cvtag{MS SQL Server}
+	
+	\bigskip
+	
+	\cvexperience{Postdoctoral Researcher}{National Taiwan University / Academia Sinica}{Feb 2019 -- May 2021}{Taipei, Taiwan}
+	
+	\medskip
+	
+	\cvexperience{Doctoral Candidate}{Intel-NTU Connected Context Computing Center}{Sep 2011 -- Apr 2018}{Taipei, Taiwan}
+	
+	Research focused on improving Java virtual machines for resource-constrained IoT devices.
+	
+	\begin{itemize}
+		\item Developed on-device ahead-of-time compilation to native code, bringing performance close to optimised C while reducing energy consumption.
+		\item Designed a platform-independent sandboxed environment to protect devices from malicious code.
+	\end{itemize}
+	
+	Results published at ACM SenSys 2018 (top-tier systems conference).
+	
+	\medskip
+	\cvtag{C}
+	\cvtag{Embedded systems}
+	
+	\bigskip
+	
+	\cvexperience{Lead Developer}{DSW Health Insurance}{Apr 2005 -- Nov 2009}{Schiedam, The Netherlands}
+	
+	Led development of DSW's new claims-processing system.
+	
+	\begin{itemize}
+		\item Delivered the system on schedule. It has run reliably since 2009 and remains maintainable despite being the company's most complex system.
+		\item Developed spin-off products that became company-wide standards, improving efficiency and standardisation across teams.
+	\end{itemize}
+	
 \end{document}
